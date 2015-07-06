@@ -1,93 +1,156 @@
 {
-    "count":"3",
+    "count":"6",
     "step1":{
         "fields":[
             {
-                "key":"name",
-                "type":"edit_text",
-                "hint":"Enter Your Name"
-            },
-            {
-                "key":"email",
-                "type":"edit_text",
-                "hint":"Enter Your Email"
-            },
-            {
-                "key":"labelBackgroundImage",
+                "key":"welcomeLusaka",
                 "type":"label",
-                "text":"Choose Background Image"
+                "text":"You are at the start of lusaka-demo. Swipe the screen as shown below to go backward and forward."
             },
             {
-                "key":"chooseImage",
-                "type":"choose_image",
-                "uploadButtonText":"Choose"
+                "key":"backward",
+                "type":"label",
+                "text":"Backward to previous prompt"
             },
             {
-                "key":"house",
-                "type":"spinner",
-                "hint": "Name Thy House",
-                "values":["Stark", "Targeriyan", "Lannister"]
+                "key":"forward",
+                "type":"label",
+                "text":"Forward to next prompt"
             }
         ],
-        "title":"Step 1 of 3",
+        "title":"ONA ODK Collect",
         "next":"step2"
     },
     "step2":{
         "fields":[
             {
-                "key":"name",
-                "type":"edit_text",
-                "hint":"Enter Country"
+                "key":"boe",
+                "type":"label",
+                "text":"Basic OpenMapKit Example."
             },
             {
-                "key":"checkData",
-                "type":"check_box",
-                "label":"Select multiple preferences",
-                "options":[
-                    {
-                        "key":"awesomeness",
-                        "text":"Are you willing for some awesomeness?",
-                        "value":"false"
-                    },
-                    {
-                        "key":"newsletter",
-                        "text":"Do you really want to opt out from my newsletter?",
-                        "value":"false"
-                    }
-                ]
-            },
-            {
-                "key":"radioData",
-                "type":"radio",
-                "label":"Select one item from below",
-                "options":[
-                    {
-                        "key":"areYouPro",
-                        "text":"Are you pro?"
-                    },
-                    {
-                        "key":"areYouAmature",
-                        "text":"Are you amature?"
-                    },
-                    {
-                        "key":"areYouNovice",
-                        "text":"Are you novice?"
-                    }
-                ],
-                "value":"areYouNovice"
+                "key":"desc",
+                "type":"label",
+                "text":"This is a basic example of an OpendataKit survey with OSM questions for OpenMapKit"
             }
         ],
-        "title":"Step 2 of 3",
+        "title":"ONA ODK Collect",
         "next":"step3"
     },
     "step3":{
         "fields":[
             {
-                "key":"anything",
-                "type":"edit_text",
-                "hint":"Enter Anything You Want"
+                "key":"photoroad",
+                "type":"label",
+                "text":"Photo of Road"
+            },
+            {
+                "key":"photoroaddesc",
+                "type":"label",
+                "text":"Take a photo of the road in front of the building."
+            },
+            {
+                "key":"chooseImageRoad",
+                "type":"choose_image",
+                "uploadButtonText":"Choose Image"
             }
         ],
-        "title":"Step 3 of 3"
+        "title":"ONA ODK Collect",
+        "next":"step4"
+    },
+    "step4":{
+        "fields":[
+            {
+                "key":"photohouse",
+                "type":"label",
+                "text":"Photo of House"
+            },
+            {
+                "key":"photohousedesc",
+                "type":"label",
+                "text":"Take a photo of the building you are surveying."
+            },
+            {
+                "key":"chooseImageHouse",
+                "type":"choose_image",
+                "uploadButtonText":"Choose Image"
+            }
+        ],
+        "title":"ONA ODK Collect",
+        "next":"step5"
+    },
+    "step5":{
+        "fields":[
+            {
+                "key":"houseIdLabel",
+                "type":"label",
+                "text":"House ID"
+            },
+            {
+                "key":"houseId",
+                "type":"edit_text",
+                "hint": ""
+            }
+        ],
+        "title":"ONA ODK Collect",
+        "next":"step6"
+    },
+    "step6": {
+        "fields": [
+            {
+                "key": "radioData",
+                "type": "radio",
+                "label": "Spray Status",
+                "options": [
+                    {
+                        "key": "yes",
+                        "text": "Yes"
+                    },
+                    {
+                        "key": "no",
+                        "text": "No"
+                    },
+                    {
+                        "key": "np",
+                        "text": "Not Possible"
+                    }
+                ],
+                "value": "no"
+            }
+        ],
+        "title": "ONA ODK Collect",
+        "next": "step7"
+    },
+    "step7":{
+        "fields":[
+            {
+                "key":"endLusaka",
+                "type":"label",
+                "text":"You are at the end of lusaka-demo."
+            },
+            {
+                "key":"nameFormLabel",
+                "type":"label",
+                "text":"Name this form"
+            },
+            {
+                "key":"formName",
+                "type":"edit_text",
+                "hint":"lusaka-demo"
+            },
+            {
+                "key":"checkData",
+                "type":"check_box",
+                "label":"",
+                "options":[
+                    {
+                        "key":"finalized",
+                        "text":"Mark form as finalized",
+                        "value":"false"
+                    }
+                ]
+            }
+        ],
+            "title": "ONA ODK Collect"
     }
 }
